@@ -1,0 +1,8 @@
+services:
+  flask_opaque:
+    build:
+      context: .
+      dockerfile: auth-py-js.dockerfile
+    ports:
+      - "5000:5000"
+    command: ["python", "auth-py-js/app.py"]
